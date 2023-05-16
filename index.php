@@ -17,15 +17,11 @@ Modificare la classe Movie in modo che accetti piú di un genere. -->
 
 <?php
 
-include __DIR__ . "/Models/Movie.php";
-include __DIR__ . "/Models/Genre.php";
+include_once __DIR__ . "/Models/Movie.php";
+include_once __DIR__ . "/Models/Genre.php";
+include __DIR__ . "/db.php";
 
 
-$avatar = new Movie("Avatar", new genre("Science Fiction"), "James Cameron");
-
-$titanic = new Movie("Titanic", new genre("Drama"), "James Cameron");
-
-$starWars = new Movie("Star Wars", new genre("Science Fiction"), "George Lucas");
 
 var_dump($avatar);
 var_dump($titanic);
@@ -33,3 +29,21 @@ var_dump($starWars)
 
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
