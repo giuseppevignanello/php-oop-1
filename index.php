@@ -22,14 +22,35 @@ class Movie
     public $genre;
     public $director;
 
-    function __construct($_genre) {
+    function __construct($_genre)
+    {
         $this->genre = $_genre;
     }
 
-    public function getGenre() {
-        return $this -> genre
+    public function getGenre()
+    {
+        return $this->genre;
     }
-
 }
+
+$avatar = new Movie("Science Fiction");
+$avatar->title = "Avatar";
+$avatar->director = "James Cameron";
+
+$titanic = new Movie("Drama");
+$titanic->title = "Titanic";
+$titanic->director = "James Cameron";
+
+$starWars = new Movie("Science Fiction");
+$starWars->title = "Star Wars";
+$starWars->director = "George Lucas";
+
+var_dump($avatar);
+var_dump($titanic);
+var_dump($starWars)
+
+
+
+
 
 ?>
