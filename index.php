@@ -16,41 +16,20 @@ Bonus 2 (opzionale)
 Modificare la classe Movie in modo che accetti piú di un genere. -->
 
 <?php
-class Movie
-{
-    public $title;
-    public $genre;
-    public $director;
 
-    function __construct($_genre)
-    {
-        $this->genre = $_genre;
-    }
+include __DIR__ . "/Models/Movie.php";
+include __DIR__ . "/Models/Genre.php";
 
-    public function getGenre()
-    {
-        return $this->genre;
-    }
-}
 
-$avatar = new Movie("Science Fiction");
-$avatar->title = "Avatar";
-$avatar->director = "James Cameron";
+$avatar = new Movie("Avatar", new genre("Science Fiction"), "James Cameron");
 
-$titanic = new Movie("Drama");
-$titanic->title = "Titanic";
-$titanic->director = "James Cameron";
+$titanic = new Movie("Titanic", new genre("Drama"), "James Cameron");
 
-$starWars = new Movie("Science Fiction");
-$starWars->title = "Star Wars";
-$starWars->director = "George Lucas";
+$starWars = new Movie("Star Wars", new genre("Science Fiction"), "George Lucas");
 
 var_dump($avatar);
 var_dump($titanic);
 var_dump($starWars)
-
-
-
 
 
 ?>
