@@ -14,3 +14,13 @@ mettendo ciascuna classe nel proprio file e magari raggruppare tutte le classi i
 organizzando il layout dividendo la struttura ed i contenuti in file e parziali dedicati.
 Bonus 2 (opzionale)
 Modificare la classe Movie in modo che accetti piú di un genere. -->
+
+<?php
+class Movie
+{
+    public $title;
+    public $genre;
+    public $director;
+}
+
+?>
